@@ -10,7 +10,15 @@ h1 {
     color: white;
 }
 
-
+.erro {
+    background-color: #aeb6e0;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px 10px 10px;
+    font: 30px bold white; 
+    border-radius: 50px;
+}
 
 .card {
     width: 50%;
