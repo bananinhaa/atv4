@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <title>atv - 4!</title>
+  </head>
+  <body>
+    <h1>Calculo IMC</h1>
+        <form>
+            <div class="card">
+                <div>
+
+                    <div class="top">
+                        <!--Os inputs: altura e peso-->
+                        <label class="altura">Altura</label>
+                        <input id="altura" type="text" placeholder="(ex.:1.70)"/>
+
+                        <label class="peso">Peso</label>
+                        <input id="peso" type="text" placeholder="(ex.: 65.2)"/>
+                    </div>
+                    <div>
+                        <input id="resultado" type="text" readonly placeholder="seu IMC">
+                    </div>
+                    <div>
+                        <!--Os butão--> 
+                        <button class="btn bt1" type="reset">limpar</button>
+                        <button class="btn bt2" type="button" onclick="imc()">calcular</button>
+                    </div>
+                    <div>
+                        <div>
+                            <table class="tabela">
+                                <thead>
+                                    <tr class="cabeca">
+                                        <th>IMC</th>
+                                        <th>Classificação</th>
+                                        <th>Obesidade</th>
+                                    </tr>
+                                </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>menor que 18.5</td>
+                                            <td>magro</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>entre 18.6 e 24.9</td>
+                                            <td>normal</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>entre 25.0 e 29 </td>
+                                            <td>sobrepeso</td>
+                                            <td>I</td>
+                                        </tr>
+                                        <tr>
+                                            <td>entre 30.0 e 39.9</td>
+                                            <td>obesidade</td>
+                                            <td>II</td>
+                                        </tr>
+                                        <tr>
+                                            <td>maior que 40</td>
+                                            <td>obesidade grave</td>
+                                            <td>III</td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
